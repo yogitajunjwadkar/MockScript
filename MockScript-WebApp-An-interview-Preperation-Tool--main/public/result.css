@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6fb;
+    color: #222;
+}
+
+.navbar {
+    background: #172554;
+    padding: 18px 7%;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 27px;
+}
+
+.highlight {
+    color: #38bdf8;
+}
+
+.main2, .main3, .space {
+    display: none;
+}
+
+.main2 {
+    padding: 35px 7%;
+}
+
+#header1 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #172554;
+}
+
+.progress_container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.progress {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.progress_item {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.progress_title {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.progress_title p {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.progress_bar {
+    width: 100%;
+    height: 13px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bar {
+    width: 0%;
+    height: 100%;
+    background: #2563eb;
+    border-radius: 20px;
+    transition: width 1s ease;
+}
+
+#accuracyText, #lengthText, #attemptText {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #172554;
+}
+
+.main3 {
+    padding: 20px 7% 50px;
+}
+
+.main3 h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #172554;
+}
+
+.data {
+    background: white;
+    padding: 22px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.data_item {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.data_item:last-child {
+    border-bottom: none;
+}
+
+.data_item h3 {
+    color: #2563eb;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.data_item p {
+    line-height: 1.6;
+    color: #444;
+    overflow-wrap: anywhere;
+}
+
+.wrapper1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 65vh;
+    text-align: center;
+}
+
+.wait-box h2 {
+    color: #172554;
+    margin-bottom: 10px;
+}
+
+.wait-box h3 {
+    color: #777;
+    font-weight: normal;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-top: 25px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 4px;
+    border-radius: 50%;
+    border: 5px solid #2563eb;
+    border-color: #2563eb transparent #2563eb transparent;
+    animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media(max-width: 768px) {
+    .progress {
+        grid-template-columns: 1fr;
+    }
+
+    .main2, .main3 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

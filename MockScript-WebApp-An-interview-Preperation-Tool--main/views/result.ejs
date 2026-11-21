@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Performance Analysis</title>
+
+    <link rel="stylesheet" href="/static/result.css">
+</head>
+
+<body>
+
+    <div class="wrapper1" id="loadingBox">
+        <h2>Analyzing your performance...</h2>
+        <p>Please wait while we evaluate your answers.</p>
+    </div>
+
+    <div class="main2" style="display: none;">
+
+        <h1>Performance Analysis</h1>
+
+        <div class="performance">
+
+            <div class="data">
+                <h3>Accuracy</h3>
+                <div class="progress">
+                    <div id="accuracyBar" class="progress-bar"></div>
+                </div>
+                <p id="accuracyText">0%</p>
+            </div>
+
+            <div class="data">
+                <h3>Average Answer Length</h3>
+                <div class="progress">
+                    <div id="lengthBar" class="progress-bar"></div>
+                </div>
+                <p id="lengthText">0 / 500 characters</p>
+            </div>
+
+            <div class="data">
+                <h3>Total Questions Attempted</h3>
+                <div class="progress">
+                    <div id="attemptBar" class="progress-bar"></div>
+                </div>
+                <p id="attemptText">0 / 0 Questions</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="space" style="display: none;"></div>
+
+    <div class="main3" style="display: none;">
+
+        <h1>Question-by-Question Comparison</h1>
+
+        <div id="comparisonContainer"></div>
+
+    </div>
+
+    <script src="/static/result.js"></script>
+
+</body>
+
+</html>
